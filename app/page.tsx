@@ -1,65 +1,77 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import shops from "../public/shops.json";
 import Fuse from "fuse.js";
-import ShopCard from "./components/ShopCard";
-
-interface Shop {
-  name: string;
-  owner: string;
-  coordinates: { x: number; z: number };
-  sells: string[];
-  buys?: string[];
-  extra?: string;
-}
+import Link from "next/link";
 
 export default function Home() {
-  const [shops, setShops] = useState<Shop[]>([]);
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState<Shop[]>([]);
 
-  useEffect(() => {
-    fetch("/shop.json")
-      .then(res => res.json())
-      .then((data: Shop[]) => {
-        setShops(data);
-        setResults(data); // default show all
-      });
-  }, []);
+  const fuse = new Fuse(shops, {
+    keys: ["name", "owner", "sells", "buys"],
+    threshold: 0.3,
+  });
 
-  useEffect(() => {
-    if (!query) {
-      setResults(shops);
-      return;
-    }
-
-    const fuse = new Fuse(shops, {
-      keys: ["name", "owner", "sells", "buys"],
-      threshold: 0.3
-    });
-
-    setResults(fuse.search(query).map(r => r.item));
-  }, [query, shops]);
+  const results = query ? fuse.search(query).map((r) => r.item) : shops;
 
   return (
-    <div className="min-h-screen bg-stone-900 text-white p-6">
-      <h1 className="text-3xl font-mono text-green-400 mb-4">
-        TerraTrove Shopping District 🛒
+    <main
+      className="min-h-screen flex flex-col items-center justify-start p-8 
+                 bg-main bg-cover bg-center bg-fixed text-white"
+    >
+      {/* Page Title */}
+      <h1 className="text-5xl font-bold mb-8 text-accent drop-shadow-lg text-center">
+        🛒 TerraTrove Shops
       </h1>
 
+      {/* Search Input */}
       <input
         type="text"
-        placeholder="Search shops or items..."
-        className="w-full p-3 mb-6 rounded-lg bg-stone-800 border border-stone-600 focus:outline-none focus:ring focus:ring-green-500"
+        placeholder="Search items or shops..."
+        className="w-full max-w-lg p-4 rounded-2xl bg-card/90 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-accent shadow-lg mb-12 text-lg text-center"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {results.map((shop, i) => (
-          <ShopCard key={i} {...shop} />
+      {/* Shop Cards Grid */}
+      <div className="max-w-7xl w-full grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
+        {results.map((shop) => (
+          <Link key={shop.id} href={`/shop/${shop.id}`} className="w-72">
+            <div
+              className="card w-full rounded-2xl overflow-hidden shadow-lg 
+                   bg-white/20 backdrop-blur-md border border-white/30 
+                   cursor-pointer hover:scale-105 transition-transform"
+            >
+              {/* Background Image */}
+
+              <div
+                className="h-40 w-full bg-cover bg-center"
+                style={{
+                  backgroundImage: `url('/shops/${
+                    shop.owner && shop.owner.trim() !== ""
+                      ? shop.owner.replace(/\s+/g, "_")
+                      : "shop"
+                  }.png')`,
+                }}
+              />
+
+              {/* Card Body */}
+              <div className="card-body p-4">
+                <h2 className="card-title text-lg text-white">{shop.name}</h2>
+                <p className="text-xs text-gray-200 mb-2">
+                  👤 Owner: {shop.owner}
+                </p>
+
+                {/* Coordinates & Tags */}
+                <p className="mt-2 text-xs text-white drop-shadow-md">
+                  📍 {shop.coords.join(", ")}
+                </p>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

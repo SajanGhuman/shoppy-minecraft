@@ -32,3 +32,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+//min-h-screen p-8 bg-main

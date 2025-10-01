@@ -1,13 +1,19 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{ts,tsx,js,jsx}",
+    "./pages/**/*.{ts,tsx,js,jsx}",
+    "./components/**/*.{ts,tsx,js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        accent: "#ff4d4d",
+        card: "#1f1f1f",
+        bg: "#121212",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
-export default config;
+

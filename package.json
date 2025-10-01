@@ -8,7 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "daisyui": "^5.1.25",
+    "framer-motion": "^12.23.22",
     "fuse.js": "^7.1.0",
+    "install": "^0.13.0",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -18,7 +21,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "tailwindcss": "^4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
     "typescript": "^5"
   }
 }

@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "name": "The Concrete Idea",
+    "owner": "alexjules",
+    "coords": [-205, 27],
+    "sells": [
+      "Colored Concrete (All Colors)",
+      "Concrete Powder",
+      "Spore Blossom",
+      "Small Dripleaf"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Stripped By Jun",
+    "owner": "Junaidh602",
+    "coords": [-92, 16],
+    "sells": [
+      "Stripped Logs (All Woods)",
+      "Golden Carrots",
+      "Obsidian",
+      "Blaze Rods",
+      "Ghast Tear",
+      "Slime Ball"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Ketchup's Konsumables",
+    "owner": "64ozKetchup",
+    "coords": [-105, 17],
+    "sells": [
+      "Flowers (All Kinds)",
+      "Coal",
+      "Honeycomb",
+      "Bone Block",
+      "Shulker Shells",
+      "Fire Resistance Potion",
+      "Weakness Potion"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "The Village Market",
+    "owner": "bloodspray666",
+    "coords": [-52, 29],
+    "sells": [
+      "Iron",
+      "Gold",
+      "Copper",
+      "Cobblestone",
+      "Blackstone",
+      "Stone",
+      "Cocoa Beans",
+      "Wool (All Colors)",
+      "Elytra"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dirt Poor",
+    "owner": "MamashaunaRN",
+    "coords": [-50, 26],
+    "sells": ["Grass Block", "Dirt", "Podzol", "Mud", "Packed Mud"],
+    "buys": ["Dirt"]
+  },
+  {
+    "id": 7,
+    "name": "The Scraporium",
+    "owner": "Notony_",
+    "coords": [-130, 65],
+    "sells": [
+      "Heavy Core",
+      "Breeze Rod",
+      "Dark Oak",
+      "Iron",
+      "Shulker of Dirt/Stone",
+      "Red Dye",
+      "Sugarcane",
+      "Honeycomb Block",
+      "Packed Ice"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "The Thrift and Gift",
+    "owner": "paigeroks",
+    "coords": [-64, 30],
+    "sells": ["Potions", "Gunpowder", "Armor Trims", "Creaking Heart"]
+  },
+  {
+    "id": 9,
+    "name": "Racoonamatata!",
+    "owner": "Evivant",
+    "coords": [63, 17],
+    "sells": ["Beacon", "Iron Block"]
+  },
+  {
+    "id": 10,
+    "name": "Seol Mate",
+    "owner": "anie3mber and Nima_Master",
+    "coords": [-69, 42],
+    "sells": [
+      "Tuff",
+      "Max Bows / Harnesses",
+      "Dried Ghast / Quartz",
+      "Terracotta",
+      "Tears Music Disc",
+      "Respawn Anchor",
+      "End Crystal",
+      "Glass / Tinted Glass",
+      "Special Herbs :)"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Rylith's Smith and Drip",
+    "owner": "Rylith_",
+    "coords": [-141, -4],
+    "sells": ["All Armor Trims", "Netherite Ingot"]
+  },
+  {
+    "id": 13,
+    "name": "Creeper's Cat Shop",
+    "owner": "GBeanT_T",
+    "coords": [-71, 91],
+    "sells": ["Raw Cod", "Cats (contact shop owner)"]
+  },
+  {
+    "id": 14,
+    "name": "Trog's End Raider",
+    "owner": "Troglodyte06",
+    "coords": [-134, 55],
+    "sells": ["Shulkers", "Lava Bucket"]
+  },
+  {
+    "id": 15,
+    "name": "C4' Stable, Silk, and Stake",
+    "owner": "C4Beast",
+    "coords": [-114, 17],
+    "sells": ["Colored Wools", "Maxed Horses"]
+  },
+  {
+    "id": 16,
+    "name": "The Blooming Shrine",
+    "owner": "Yellamoiahs",
+    "coords": [-135, -26],
+    "sells": [
+      "Bamboo",
+      "Chorus Fruit",
+      "Lava Bucket",
+      "Flower/Decorate Pots",
+      "Dried Kelp",
+      "Cactus",
+      "Deepslate / Fireworks"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "RigMart",
+    "owner": "Various Rig Members",
+    "coords": [-62, 135],
+    "sells": [
+      "All dyes + wools",
+      "Fireworks",
+      "Netherite Gear",
+      "Repair Shulker",
+      "Slimeballs",
+      "String",
+      "Leather"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Leonca's on order shop !",
+    "owner": "Leonca",
+    "coords": [-160, 64],
+    "sells": [
+      "Goat Horns",
+      "Terracotta Blocks!!",
+      "Redstone Block",
+      "Slime Block",
+      "Smooth Stone",
+      "Mud",
+      "Purpur Block",
+      "End Rod",
+      "Sea Pickles",
+      "Coral Items"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "The Terra Library",
+    "owner": "Creeva",
+    "coords": [-228, 32],
+    "sells": [
+      "Public library with many books available to read!",
+      "Ghost3ry sells poetry in the attic!",
+      "Free library cards (compass that will always point to spawn)"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Wood Lodge",
+    "owner": "",
+    "coords": [-76, 64, 96],
+    "sells": [
+      "256 Oak Logs - 1 diamond",
+      "256 Birch Logs - 1 diamond",
+      "256 Spruce Logs - 1 diamond",
+      "256 Cherry Logs - 1 diamond",
+      "256 Acacia Oak Logs - 1 diamond",
+      "256 Jungle Logs - 1 diamond",
+      "256 Pale Oak Logs - 1 diamond",
+      "256 Dark Oak Logs - 1 diamond",
+      "256 Mangrove Logs - 1 diamond",
+      "256 Crimson Stem - 1 diamond",
+      "256 Warped Stem - 1 diamond",
+      "128 Pale Moss Carpet - 1 diamond",
+      "128 Moss Carpet - 1 diamond",
+      "128 Pale Moss Block - 1 diamond",
+      "128 Moss Block - 1 diamond",
+      "64 Azalea Bushes - 1 diamond",
+      "64 Flowering Azalea Bushes - 1 diamond",
+      "64 Bone Blocks - 1 diamond",
+      "128 Warped Wart Block - 1 diamond",
+      "128 Nether Wart Block - 1 diamond",
+      "32 Shroomlight - 1 diamond"
+    ]
+  }
+]
