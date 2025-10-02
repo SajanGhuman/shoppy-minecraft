@@ -21,15 +21,14 @@ export default function ShopPage({ params }: ShopPageProps) {
   }
 
   return (
-    <main className="min-h-screen p-6 text-white bg-[url('/textures/grass.png')] bg-main bg-cover bg-center bg-fixed flex flex-col gap-8 items-center">
+    <main className="min-h-screen p-6 text-black bg-[url('/textures/grass.png')] bg-main bg-cover bg-center bg-fixed flex flex-col gap-8 items-center">
       {/* Shop Header */}
-      <div className="w-full max-w-3xl rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 shadow-xl p-6 text-center flex flex-col gap-4">
+      <div className="w-full max-w-3xl rounded-2xl bg-white/30 backdrop-blur-md border border-white/30 shadow-xl p-6 text-center flex flex-col gap-4">
         <h1 className="text-5xl font-bold drop-shadow-lg pixel-font">
           {shop.name}
         </h1>
         <div className="flex items-center justify-center gap-3 text-lg">
           <img
-            // src={`/owners/${shop.owner.toLowerCase()}.png`}
             src={`/owners/avatar.png`}
             alt={shop.owner}
             className="w-6 h-6"
@@ -40,20 +39,28 @@ export default function ShopPage({ params }: ShopPageProps) {
       </div>
 
       {/* Sells Section */}
-      <section className="w-full max-w-3xl rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg p-6">
-        <h2 className="text-3xl text-green-300 mb-4 pixel-font">🟩 Sells</h2>
-        <div className="flex flex-wrap gap-3">
+      <section className="w-full max-w-5xl rounded-2xl bg-white/30 backdrop-blur-md border border-white/30 shadow-lg p-6">
+        <h2 className="text-3xl text-green-700 mb-6 pixel-font">🟩 Sells</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {shop.sells.map((item, i) => (
             <div
               key={i}
-              className="flex items-center gap-2 px-3 py-1 rounded-lg bg-white/30 backdrop-blur-sm border border-white/30 text-sm"
+              className="flex flex-col items-center p-4 rounded-xl bg-white/40 backdrop-blur-sm border border-white/30 shadow-md hover:scale-105 transition-transform"
             >
               <img
                 src={`/items/${item.toLowerCase().replace(/ /g, "_")}.png`}
                 alt={item}
-                className="w-6 h-6"
+                className="w-24 h-24 object-contain mb-3"
               />
-              <span>{item}</span>
+              <span className="text-lg font-semibold text-center">{item}</span>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="text-sm">100</span>
+                <img
+                  src="/items/diamond.png"
+                  alt="Diamond"
+                  className="w-5 h-5"
+                />
+              </div>
             </div>
           ))}
         </div>
@@ -61,20 +68,30 @@ export default function ShopPage({ params }: ShopPageProps) {
 
       {/* Buys Section */}
       {shop.buys && (
-        <section className="w-full max-w-3xl rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg p-6">
-          <h2 className="text-3xl text-blue-300 mb-4 pixel-font">🟦 Buys</h2>
-          <div className="flex flex-wrap gap-3">
+        <section className="w-full max-w-5xl rounded-2xl bg-white/30 backdrop-blur-md border border-white/30 shadow-lg p-6">
+          <h2 className="text-3xl text-blue-800 mb-6 pixel-font">🟥 Buys</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {shop.buys.map((item, i) => (
               <div
                 key={i}
-                className="flex items-center gap-2 px-3 py-1 rounded-lg bg-white/30 backdrop-blur-sm border border-white/30 text-sm"
+                className="flex flex-col items-center p-4 rounded-xl bg-white/40 backdrop-blur-sm border border-white/30 shadow-md hover:scale-105 transition-transform"
               >
                 <img
                   src={`/items/${item.toLowerCase().replace(/ /g, "_")}.png`}
                   alt={item}
-                  className="w-6 h-6"
+                  className="w-24 h-24 object-contain mb-3"
                 />
-                <span>{item}</span>
+                <span className="text-lg font-semibold text-center">
+                  {item}
+                </span>
+                <div className="flex items-center gap-2 mt-2">
+                  <img
+                    src="/items/diamond.png"
+                    alt="Diamond"
+                    className="w-5 h-5"
+                  />
+                  <span className="text-sm">Buying</span>
+                </div>
               </div>
             ))}
           </div>
@@ -85,7 +102,7 @@ export default function ShopPage({ params }: ShopPageProps) {
       <div className="w-full max-w-3xl flex justify-center">
         <Link
           href="/"
-          className="px-6 py-3 rounded-xl text-lg font-bold pixel-font bg-white/20 backdrop-blur-md border border-white/30 shadow-lg hover:scale-105 transition-transform"
+          className="px-6 py-3 rounded-xl text-lg font-bold pixel-font bg-white/30 backdrop-blur-md border border-white/30 shadow-lg hover:scale-105 transition-transform"
         >
           ⬅ Back to Directory
         </Link>

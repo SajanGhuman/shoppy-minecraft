@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <main
       className="min-h-screen flex flex-col items-center justify-start p-8 
-                 bg-main bg-cover bg-center bg-fixed text-white"
+                 bg-main bg-cover bg-center bg-fixed text-black"
     >
       {/* Page Title */}
-      <h1 className="text-5xl font-bold mb-8 text-accent drop-shadow-lg text-center">
+      <h1 className="text-5xl font-bold mb-8 text-accent drop-shadow-lg text-center text-black">
         🛒 TerraTrove Shops
       </h1>
 
@@ -29,7 +29,7 @@ export default function Home() {
       <input
         type="text"
         placeholder="Search items or shops..."
-        className="w-full max-w-lg p-4 rounded-2xl bg-card/90 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-accent shadow-lg mb-12 text-lg text-center"
+        className="w-full max-w-lg p-4 rounded-2xl bg-card/90 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent shadow-lg mb-12 text-lg text-center"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
@@ -44,7 +44,6 @@ export default function Home() {
                    cursor-pointer hover:scale-105 transition-transform"
             >
               {/* Background Image */}
-
               <div
                 className="h-40 w-full bg-cover bg-center"
                 style={{
@@ -58,15 +57,15 @@ export default function Home() {
 
               {/* Card Body */}
               <div className="card-body p-4">
-                <h2 className="card-title text-lg text-white">{shop.name}</h2>
-                <p className="text-xs text-gray-200 mb-2">
+                <h2 className="card-title text-lg text-black">{shop.name}</h2>
+                <p className="text-xs text-gray-800 mb-2">
                   👤 Owner: {shop.owner}
                 </p>
 
                 {/* Coordinates & Tags */}
-                <p className="mt-2 text-xs text-white drop-shadow-md">
-                  📍 {shop.coords.join(", ")}
-                </p>
+                {/* <p className="mt-2 text-xs text-black drop-shadow-md"> */}
+                {/*   📍 {shop.coords.join(", ")} */}
+                {/* </p> */}
               </div>
             </div>
           </Link>
