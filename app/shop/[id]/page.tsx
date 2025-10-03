@@ -1,6 +1,13 @@
 import shops from "@/public/shops.json";
 import Link from "next/link";
 
+interface ShopItem {
+  name: string;
+  price?: number;
+  quantity?: number;
+  image?: string;
+}
+
 interface ShopPageProps {
   params: {
     id: string;
@@ -42,25 +49,34 @@ export default function ShopPage({ params }: ShopPageProps) {
       <section className="w-full max-w-5xl rounded-2xl bg-white/30 backdrop-blur-md border border-white/30 shadow-lg p-6">
         <h2 className="text-3xl text-green-700 mb-6 pixel-font">🟩 Sells</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          {shop.sells.map((item, i) => (
+          {shop.sells.map((item: ShopItem, i: number) => (
             <div
               key={i}
               className="flex flex-col items-center p-4 rounded-xl bg-white/40 backdrop-blur-sm border border-white/30 shadow-md hover:scale-105 transition-transform"
             >
               <img
-                src={`/items/${item.toLowerCase().replace(/ /g, "_")}.png`}
-                alt={item}
+                src={item.image ? `/items/${item.image}` : "/items/diamond.png"}
+                alt={item.name}
                 className="w-24 h-24 object-contain mb-3"
               />
-              <span className="text-lg font-semibold text-center">{item}</span>
-              <div className="flex items-center gap-2 mt-2">
-                <span className="text-sm">100</span>
-                <img
-                  src="/items/diamond.png"
-                  alt="Diamond"
-                  className="w-5 h-5"
-                />
-              </div>
+              <span className="text-lg font-semibold text-center">
+                {item.name}
+              </span>
+              {item.quantity && (
+                <span className="text-sm text-gray-700">
+                  Qty: {item.quantity}
+                </span>
+              )}
+              {item.price !== undefined && (
+                <div className="flex items-center gap-2 mt-2">
+                  <span className="text-sm">{item.price}</span>
+                  <img
+                    src="/items/diamond.png"
+                    alt="Diamond"
+                    className="w-5 h-5"
+                  />
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -69,28 +85,37 @@ export default function ShopPage({ params }: ShopPageProps) {
       {/* Buys Section */}
       {shop.buys && (
         <section className="w-full max-w-5xl rounded-2xl bg-white/30 backdrop-blur-md border border-white/30 shadow-lg p-6">
-          <h2 className="text-3xl text-blue-800 mb-6 pixel-font">🟥 Buys</h2>
+          <h2 className="text-3xl text-red-700 mb-6 pixel-font">🟥 Buys</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            {shop.buys.map((item, i) => (
+            {shop.buys.map((item: ShopItem, i: number) => (
               <div
                 key={i}
                 className="flex flex-col items-center p-4 rounded-xl bg-white/40 backdrop-blur-sm border border-white/30 shadow-md hover:scale-105 transition-transform"
               >
                 <img
-                  src={`/items/${item.toLowerCase().replace(/ /g, "_")}.png`}
-                  alt={item}
+                  src={
+                    item.image ? `/items/${item.image}` : "/items/diamond.png"
+                  }
+                  alt={item.name}
                   className="w-24 h-24 object-contain mb-3"
                 />
                 <span className="text-lg font-semibold text-center">
-                  {item}
+                  {item.name}
                 </span>
+                {item.quantity && (
+                  <span className="text-sm text-gray-700">
+                    Qty: {item.quantity}
+                  </span>
+                )}
                 <div className="flex items-center gap-2 mt-2">
                   <img
                     src="/items/diamond.png"
                     alt="Diamond"
                     className="w-5 h-5"
                   />
-                  <span className="text-sm">Buying</span>
+                  <span className="text-sm">
+                    {item.price !== undefined ? item.price : "Buying"}
+                  </span>
                 </div>
               </div>
             ))}

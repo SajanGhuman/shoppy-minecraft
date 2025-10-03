@@ -5,10 +5,24 @@
     "owner": "alexjules",
     "coords": [-205, 27],
     "sells": [
-      "Colored Concrete (All Colors)",
-      "Concrete Powder",
-      "Spore Blossom",
-      "Small Dripleaf"
+      {
+        "name": "Colored Concrete (All Colors)",
+        "quantity": 64,
+        "price": 1,
+        "image": "concrete.png"
+      },
+      {
+        "name": "Redstone Block",
+        "quantity": 16,
+        "price": 1,
+        "image": "redstone_block.png"
+      },
+      {
+        "name": "Lapis Block",
+        "quantity": 32,
+        "price": 1,
+        "image": "lapis_block.png"
+      }
     ]
   },
   {
@@ -17,12 +31,61 @@
     "owner": "Junaidh602",
     "coords": [-92, 16],
     "sells": [
-      "Stripped Logs (All Woods)",
-      "Golden Carrots",
-      "Obsidian",
-      "Blaze Rods",
-      "Ghast Tear",
-      "Slime Ball"
+      {
+        "name": "Shulker of Totems (Shulker)",
+        "quantity": 1,
+        "price": 10,
+        "image": "totem.png"
+      },
+      { "name": "Beacon", "quantity": 1, "price": 8, "image": "beacon.png" },
+      {
+        "name": "Golden Carrot",
+        "quantity": 64,
+        "price": 1,
+        "image": "golden_carrot.png"
+      },
+      {
+        "name": "Golden Carrot (Shulker)",
+        "quantity": 1,
+        "price": 24,
+        "image": "golden_carrot.png"
+      },
+      {
+        "name": "Stripped Logs (All Types)",
+        "quantity": 128,
+        "price": 1,
+        "image": "stripped_logs.png"
+      },
+      {
+        "name": "Blaze Rods",
+        "quantity": 64,
+        "price": 2,
+        "image": "blaze_rods.png"
+      },
+      {
+        "name": "Obsidian",
+        "quantity": 64,
+        "price": 1,
+        "image": "obsidian.png"
+      },
+      {
+        "name": "Slime Ball",
+        "quantity": 128,
+        "price": 1,
+        "image": "slime_ball.png"
+      },
+      {
+        "name": "Ghast Tear",
+        "quantity": 64,
+        "price": 1,
+        "image": "ghast_tear.png"
+      },
+      {
+        "name": "Shroomlights",
+        "quantity": 64,
+        "price": 1,
+        "image": "shroomlight.png"
+      }
     ]
   },
   {
@@ -31,13 +94,43 @@
     "owner": "64ozKetchup",
     "coords": [-105, 17],
     "sells": [
-      "Flowers (All Kinds)",
-      "Coal",
-      "Honeycomb",
-      "Bone Block",
-      "Shulker Shells",
-      "Fire Resistance Potion",
-      "Weakness Potion"
+      { "name": "Coal", "quantity": 64, "price": 1, "image": "coal.png" },
+      {
+        "name": "Honeycomb Block",
+        "quantity": 64,
+        "price": 1,
+        "image": "honeycomb_block.png"
+      },
+      {
+        "name": "Bone Block",
+        "quantity": 128,
+        "price": 1,
+        "image": "bone_block.png"
+      },
+      {
+        "name": "Berries",
+        "quantity": 1,
+        "price": 1,
+        "image": "berries.png"
+      },
+      {
+        "name": "Verdant Froglight",
+        "quantity": 64,
+        "price": 1,
+        "image": "verdant_froglight.png"
+      },
+      {
+        "name": "Pearlescent Froglight",
+        "quantity": 64,
+        "price": 1,
+        "image": "pearlescent_froglight.png"
+      },
+      {
+        "name": "Ochre Froglight",
+        "quantity": 64,
+        "price": 1,
+        "image": "ochre_froglight.png"
+      }
     ]
   },
   {
@@ -46,15 +139,60 @@
     "owner": "bloodspray666",
     "coords": [-52, 29],
     "sells": [
-      "Iron",
-      "Gold",
-      "Copper",
-      "Cobblestone",
-      "Blackstone",
-      "Stone",
-      "Cocoa Beans",
-      "Wool (All Colors)",
-      "Elytra"
+      {
+        "name": "Shulker of Cobblestone",
+        "quantity": 1,
+        "price": 10,
+        "image": "cobblestone.png"
+      },
+      {
+        "name": "Shulker of Cobbled Deepslate",
+        "quantity": 1,
+        "price": 10,
+        "image": "cobbled_deepslate.png"
+      },
+      {
+        "name": "Shulker Stone",
+        "quantity": 1,
+        "price": 10,
+        "image": "stone.png"
+      },
+      {
+        "name": "Shulker Stone Bricks",
+        "quantity": 1,
+        "price": 10,
+        "image": "stone_brick.png"
+      },
+      {
+        "name": "Blackstone",
+        "quantity": 64,
+        "price": 3,
+        "image": "blackstone.png"
+      },
+      {
+        "name": "Copper Block",
+        "quantity": 24,
+        "price": 1,
+        "image": "copper_block.png"
+      },
+      {
+        "name": "Iron Block",
+        "quantity": 16,
+        "price": 1,
+        "image": "iron_block.png"
+      },
+      {
+        "name": "Gold Block",
+        "quantity": 16,
+        "price": 1,
+        "image": "gold_block.png"
+      },
+      {
+        "name": "Rooted Dirt",
+        "quantity": 64,
+        "price": 2,
+        "image": "rooted_dirt.png"
+      }
     ]
   },
   {
@@ -62,8 +200,35 @@
     "name": "Dirt Poor",
     "owner": "MamashaunaRN",
     "coords": [-50, 26],
-    "sells": ["Grass Block", "Dirt", "Podzol", "Mud", "Packed Mud"],
-    "buys": ["Dirt"]
+    "sells": [
+      {
+        "name": "Grass Block",
+        "quantity": 128,
+        "price": 2,
+        "image": "grass_block.png"
+      },
+      { "name": "Podzol", "quantity": 64, "price": 1, "image": "podzol.png" },
+      {
+        "name": "Coarse Dirt",
+        "quantity": 32,
+        "price": 1,
+        "image": "coarse_dirt.png"
+      }
+    ],
+    "buys": [
+      {
+        "name": "Grass Block",
+        "quantity": 128,
+        "price": 1,
+        "image": "grass_block.png"
+      },
+      {
+        "name": "Shulker of Dirt",
+        "quantity": 1,
+        "price": 5,
+        "image": "coarse_dirt.png"
+      }
+    ]
   },
   {
     "id": 7,
@@ -71,15 +236,56 @@
     "owner": "Notony_",
     "coords": [-130, 65],
     "sells": [
-      "Heavy Core",
-      "Breeze Rod",
-      "Dark Oak",
-      "Iron",
-      "Shulker of Dirt/Stone",
-      "Red Dye",
-      "Sugarcane",
-      "Honeycomb Block",
-      "Packed Ice"
+      {
+        "name": "Shulker of Dirt",
+        "quantity": 1,
+        "price": 3,
+        "image": "dirt.png"
+      },
+      { "name": "Iron", "quantity": 64, "price": 8, "image": "iron_block.png" },
+      {
+        "name": "Shulker of Stone",
+        "quantity": 1,
+        "price": 2,
+        "image": "stone.png"
+      },
+      {
+        "name": "Heavy Core",
+        "quantity": 1,
+        "price": 54,
+        "image": "heavy_core.png"
+      },
+      {
+        "name": "Breeze Rod",
+        "quantity": 16,
+        "price": 1,
+        "image": "breeze_rod.png"
+      },
+      {
+        "name": "Honeycomb Block",
+        "quantity": 64,
+        "price": 3,
+        "image": "honeycomb_block.png"
+      },
+      {
+        "name": "Dark Oak",
+        "quantity": 64,
+        "price": 1,
+        "image": "dark_oak.png"
+      },
+      { "name": "Red Dye", "quantity": 64, "price": 1, "image": "red_dye.png" },
+      {
+        "name": "Sugarcane",
+        "quantity": 64,
+        "price": 1,
+        "image": "sugarcane.png"
+      },
+      {
+        "name": "Packed Ice",
+        "quantity": 64,
+        "price": 2,
+        "image": "packed_ice.png"
+      }
     ]
   },
   {
@@ -87,30 +293,273 @@
     "name": "The Thrift and Gift",
     "owner": "paigeroks",
     "coords": [-64, 30],
-    "sells": ["Potions", "Gunpowder", "Armor Trims", "Creaking Heart"]
+    "sells": [
+      {
+        "name": "Water Bucket",
+        "quantity": 2,
+        "price": 1,
+        "image": "water_bucket.png"
+      },
+      {
+        "name": "Bone Blocks",
+        "quantity": 64,
+        "price": 1,
+        "image": "bone_block.png"
+      },
+      {
+        "name": "Firefly Bush",
+        "quantity": 16,
+        "price": 1,
+        "image": "firefly_bush.png"
+      },
+      {
+        "name": "Tall Dry Grass",
+        "quantity": 16,
+        "price": 1,
+        "image": "tall_grass.png"
+      },
+      {
+        "name": "Short Dry Grass",
+        "quantity": 16,
+        "price": 1,
+        "image": "short_grass.png"
+      },
+      { "name": "Ink Sac", "quantity": 64, "price": 2, "image": "ink_sac.png" },
+      { "name": "Bricks", "quantity": 64, "price": 1, "image": "brick.png" },
+      {
+        "name": "Nether Bricks",
+        "quantity": 64,
+        "price": 1,
+        "image": "nether_brick.png"
+      },
+      {
+        "name": "Stripped Crimson Stem",
+        "quantity": 48,
+        "price": 1,
+        "image": "stripped_crimson_stem.png"
+      },
+      {
+        "name": "Cherry Log",
+        "quantity": 64,
+        "price": 1,
+        "image": "cherry_log.png"
+      },
+      {
+        "name": "Amethyst Block",
+        "quantity": 64,
+        "price": 1,
+        "image": "amethyst_block.png"
+      },
+      {
+        "name": "Smooth Basalt",
+        "quantity": 64,
+        "price": 1,
+        "image": "smooth_basalt.png"
+      },
+      {
+        "name": "Shulker of Mystery Potions",
+        "quantity": 1,
+        "price": 6,
+        "image": "mystery_potion.png"
+      },
+      {
+        "name": "Bouquet of Flowers (Shulker)",
+        "quantity": 1,
+        "price": 2,
+        "image": "bouquet_of_flowers.png"
+      },
+      { "name": "Saddle", "quantity": 1, "price": 1, "image": "saddle.png" },
+      {
+        "name": "Diamond Horse Armor",
+        "quantity": 1,
+        "price": 1,
+        "image": "diamond_horse_armor.png"
+      },
+      {
+        "name": "Wolf Armor",
+        "quantity": 1,
+        "price": 1,
+        "image": "wolf_armor.png"
+      },
+      {
+        "name": "White Wool",
+        "quantity": 2,
+        "price": 1,
+        "image": "white_wool.png"
+      },
+      {
+        "name": "Sniffer Egg",
+        "quantity": 2,
+        "price": 15,
+        "image": "sniffer_egg.png"
+      },
+      {
+        "name": "Breeze Rod",
+        "quantity": 32,
+        "price": 1,
+        "image": "breeze_rod.png"
+      },
+      {
+        "name": "Soul Speed III Book",
+        "quantity": 1,
+        "price": 1,
+        "image": "enchanted_book.png"
+      },
+      {
+        "name": "Redstone Blocks",
+        "quantity": 16,
+        "price": 1,
+        "image": "redstone_block.png"
+      },
+      {
+        "name": "Honey Blocks",
+        "quantity": 16,
+        "price": 1,
+        "image": "honey_block.png"
+      },
+      {
+        "name": "Coast Armor Trim",
+        "quantity": 2,
+        "price": 1,
+        "image": "coast_armor_trim.png"
+      },
+      {
+        "name": "Flow Armor Trim",
+        "quantity": 3,
+        "price": 2,
+        "image": "flow_armor_trim.png"
+      },
+      {
+        "name": "Heavy Core",
+        "quantity": 1,
+        "price": 63,
+        "image": "heavy_core.png"
+      },
+      {
+        "name": "Enchanted Gold Apple",
+        "quantity": 4,
+        "price": 9,
+        "image": "enchanted_golden_apple.png"
+      },
+      {
+        "name": "Emerald Blocks",
+        "quantity": 16,
+        "price": 3,
+        "image": "emerald_block.png"
+      },
+      {
+        "name": "Mystery Pouch (Always contains 9 Diamonds)",
+        "quantity": 9,
+        "price": 9,
+        "image": "pouch.png"
+      }
+    ]
   },
   {
     "id": 9,
     "name": "Racoonamatata!",
     "owner": "Evivant",
     "coords": [63, 17],
-    "sells": ["Beacon", "Iron Block"]
+    "sells": [
+      { "name": "Beacon", "quantity": 1, "price": 18, "image": "beacon.png" },
+      {
+        "name": "Ender Chest",
+        "quantity": 2,
+        "price": 5,
+        "image": "ender_chest.png"
+      }
+    ]
   },
   {
     "id": 10,
     "name": "Seol Mate",
-    "owner": "anie3mber and Nima_Master",
+    "owner": "Nima_Master",
     "coords": [-69, 42],
     "sells": [
-      "Tuff",
-      "Max Bows / Harnesses",
-      "Dried Ghast / Quartz",
-      "Terracotta",
-      "Tears Music Disc",
-      "Respawn Anchor",
-      "End Crystal",
-      "Glass / Tinted Glass",
-      "Special Herbs :)"
+      {
+        "name": "Dried Ghasts",
+        "price": 1,
+        "quantity": 1,
+        "image": "dried_ghast.png"
+      },
+      {
+        "name": "Max Enchanted Bow",
+        "price": 15,
+        "quantity": 1,
+        "image": "enchanted_bow.png"
+      },
+      {
+        "name": "Respawn Anchors",
+        "price": 1,
+        "quantity": 16,
+        "image": "respawn_anchor.png"
+      },
+      {
+        "name": "End Crystal",
+        "price": 1,
+        "quantity": 16,
+        "image": "end_crystal.png"
+      },
+      {
+        "name": "White Harness",
+        "price": 1,
+        "quantity": 1,
+        "image": "white_harness.png"
+      },
+      {
+        "name": "Tears Music Disc",
+        "price": 5,
+        "quantity": 1,
+        "image": "tears_music_disc.png"
+      },
+      {
+        "name": "Quartz Block",
+        "price": 2,
+        "quantity": 64,
+        "image": "quartz_block.png"
+      },
+      {
+        "name": "Terracotta",
+        "price": 1,
+        "quantity": 128,
+        "image": "terracotta.png"
+      },
+      {
+        "name": "Tinted Glass",
+        "price": 1,
+        "quantity": 64,
+        "image": "tinted_glass.png"
+      },
+      {
+        "name": "Glass",
+        "price": 1,
+        "quantity": 128,
+        "image": "glass.png"
+      },
+      {
+        "name": "Variety of Special Herbs",
+        "price": 1,
+        "quantity": 8,
+        "image": "placeholder.png"
+      },
+      {
+        "name": "Magical Special Herbs",
+        "price": 1,
+        "quantity": 6,
+        "image": "placeholder.png"
+      },
+      {
+        "name": "Cobbled Deepslate",
+        "price": 1,
+        "quantity": 64,
+        "image": "cobbled_deepslate.png"
+      },
+      {
+        "name": "Tuff Blocks",
+        "price": 1,
+        "quantity": 96,
+        "image": "tuff.png"
+      }
     ]
   },
   {
@@ -118,28 +567,117 @@
     "name": "Rylith's Smith and Drip",
     "owner": "Rylith_",
     "coords": [-141, -4],
-    "sells": ["All Armor Trims", "Netherite Ingot"]
+    "sells": [
+      {
+        "name": "All Armor Trims",
+        "price": 14,
+        "quantity": 1,
+        "image": "armor_trim.png"
+      },
+      {
+        "name": "Netherite Ingot",
+        "price": 26,
+        "quantity": 1,
+        "image": "netherite_ingot.png"
+      },
+      {
+        "name": "All Smithing Template",
+        "price": 10,
+        "quantity": 1,
+        "image": "flow_armor_trim.png"
+      },
+      {
+        "name": "Iron Block",
+        "price": 1,
+        "quantity": 192,
+        "image": "iron_block.png"
+      },
+      {
+        "name": "Swift Sneek III",
+        "quantity": 1,
+        "price": 10,
+        "image": "enchanted_book.png"
+      },
+
+      {
+        "name": "Golden Apple",
+        "price": 15,
+        "quantity": 1,
+        "image": "golden_apple.png"
+      }
+    ]
   },
   {
     "id": 13,
     "name": "Creeper's Cat Shop",
     "owner": "GBeanT_T",
     "coords": [-71, 91],
-    "sells": ["Raw Cod", "Cats (contact shop owner)"]
+    "sells": [
+      {
+        "name": "Random Type",
+        "price": 5,
+        "quantity": 1,
+        "image": "cat.png"
+      },
+      {
+        "name": "Specific Type",
+        "price": 10,
+        "quantity": 1,
+        "image": "cat.png"
+      },
+      {
+        "name": "Rare Type",
+        "price": 30,
+        "quantity": 1,
+        "image": "cat.png"
+      },
+      {
+        "name": "Raw Cod",
+        "price": 1,
+        "quantity": 64,
+        "image": "cod.png"
+      }
+    ]
   },
   {
     "id": 14,
     "name": "Trog's End Raider",
     "owner": "Troglodyte06",
     "coords": [-134, 55],
-    "sells": ["Shulkers", "Lava Bucket"]
+    "sells": [
+      {
+        "name": "Shulkers Shell",
+        "price": 2,
+        "quantity": 20,
+        "image": "shulker_shell.png"
+      },
+      {
+        "name": "Lava Bucket",
+        "price": 1,
+        "quantity": 1,
+        "image": "lava_bucket.png"
+      }
+    ]
   },
   {
     "id": 15,
     "name": "C4' Stable, Silk, and Stake",
     "owner": "C4Beast",
     "coords": [-114, 17],
-    "sells": ["Colored Wools", "Maxed Horses"]
+    "sells": [
+      {
+        "name": "Wools (All Types)",
+        "price": 35,
+        "quantity": 64,
+        "image": "white_wool.png"
+      },
+      {
+        "name": "Maxed Horses",
+        "price": 15,
+        "quantity": 1,
+        "image": "white_horse.png"
+      }
+    ]
   },
   {
     "id": 16,
@@ -147,13 +685,107 @@
     "owner": "Yellamoiahs",
     "coords": [-135, -26],
     "sells": [
-      "Bamboo",
-      "Chorus Fruit",
-      "Lava Bucket",
-      "Flower/Decorate Pots",
-      "Dried Kelp",
-      "Cactus",
-      "Deepslate / Fireworks"
+      { "name": "Bamboo", "price": 1, "quantity": 128, "image": "bamboo.png" },
+      {
+        "name": "Chorus Fruit",
+        "price": 1,
+        "quantity": 64,
+        "image": "chorus_fruit.png"
+      },
+      {
+        "name": "Lava Bucket",
+        "price": 1,
+        "quantity": 5,
+        "image": "lava_bucket.png"
+      },
+      {
+        "name": "Flower Pot",
+        "price": 1,
+        "quantity": 28,
+        "image": "flower_pot.png"
+      },
+      {
+        "name": "Decorated Pot",
+        "price": 1,
+        "quantity": 21,
+        "image": "flower_pot.png"
+      },
+
+      {
+        "name": "Dried Kelp",
+        "price": 1,
+        "quantity": 64,
+        "image": "dried_kelp.png"
+      },
+      { "name": "Cactus", "price": 1, "quantity": 64, "image": "cactus.png" },
+      {
+        "name": "Deepslate",
+        "price": 1,
+        "quantity": 256,
+        "image": "cobbled_deepslate.png"
+      },
+      { "name": "TNT", "quantity": 64, "price": 2, "image": "tnt.png" },
+      {
+        "name": "Firework Rocket (Duration 1)",
+        "quantity": 256,
+        "price": 1,
+        "image": "rocket.png"
+      },
+      {
+        "name": "Rocket (Red Shulker)",
+        "quantity": 1,
+        "price": 6,
+        "image": "rocket.png"
+      },
+      {
+        "name": "Cobbled Deepslate",
+        "quantity": 256,
+        "price": 1,
+        "image": "cobbled_deepslate.png"
+      },
+      {
+        "name": "Chiseled Deepslate",
+        "quantity": 192,
+        "price": 1,
+        "image": "chiseled_deepslate.png"
+      },
+      {
+        "name": "Deepslate Tile",
+        "quantity": 192,
+        "price": 1,
+        "image": "deepslate_tile.png"
+      },
+      {
+        "name": "Polished Deepslate",
+        "quantity": 192,
+        "price": 1,
+        "image": "polished_deepslate.png"
+      },
+      { "name": "Paper", "quantity": 128, "price": 1, "image": "paper.png" },
+      {
+        "name": "Sugar Cane (Shulker)",
+        "quantity": 1,
+        "price": 5,
+        "image": "sugarcane.png"
+      },
+      {
+        "name": "White Banner",
+        "quantity": 10,
+        "price": 1,
+        "image": "white_banner.png"
+      },
+      {
+        "name": "Black Banner",
+        "quantity": 10,
+        "price": 1,
+        "image": "black_banner.png"
+      },
+      {
+        "name": "Red Banner",
+        "quantity": 10,
+        "price": 1,
+        "image": "red_banner.png"
+      }
     ]
   },
   {
@@ -162,42 +794,333 @@
     "owner": "Various Rig Members",
     "coords": [-62, 135],
     "sells": [
-      "All dyes + wools",
-      "Fireworks",
-      "Netherite Gear",
-      "Repair Shulker",
-      "Slimeballs",
-      "String",
-      "Leather"
+      { "name": "String", "quantity": 128, "price": 1, "image": "string.png" },
+      { "name": "Leather", "quantity": 64, "price": 1, "image": "leather.png" },
+      {
+        "name": "Golden Carrot",
+        "quantity": 64,
+        "price": 1,
+        "image": "golden_carrot.png"
+      },
+      {
+        "name": "Golden Apple",
+        "quantity": 16,
+        "price": 1,
+        "image": "golden_apple.png"
+      },
+      {
+        "name": "Iron Block",
+        "quantity": 16,
+        "price": 1,
+        "image": "iron_block.png"
+      },
+      {
+        "name": "Gold Block",
+        "quantity": 16,
+        "price": 1,
+        "image": "gold_block.png"
+      },
+
+      { "name": "TNT", "quantity": 16, "price": 1, "image": "tnt.png" },
+      {
+        "name": "Firework Rocket (Duration 1)",
+        "quantity": 288,
+        "price": 1,
+        "image": "rocket.png"
+      },
+      {
+        "name": "Firework Rocket (Duration 3)",
+        "quantity": 108,
+        "price": 1,
+        "image": "rocket.png"
+      },
+      {
+        "name": "Gunpowder",
+        "quantity": 192,
+        "price": 1,
+        "image": "gunpowder.png"
+      },
+      {
+        "name": "Level 1 Shulker",
+        "quantity": 6,
+        "price": 1,
+        "image": "purple_shulker.png"
+      },
+      {
+        "name": "Level 3 Shulker",
+        "quantity": 16,
+        "price": 1,
+        "image": "purple_shulker.png"
+      },
+
+      {
+        "name": "Diamond Helmet",
+        "quantity": 20,
+        "price": 1,
+        "image": "dia_helmet.png"
+      },
+      {
+        "name": "Chestplate",
+        "quantity": 10,
+        "price": 1,
+        "image": "dia_chestplate.png"
+      },
+      {
+        "name": "Leggings",
+        "quantity": 10,
+        "price": 1,
+        "image": "dia_legging.png"
+      },
+      { "name": "Boots", "quantity": 20, "price": 1, "image": "dia_boot.png" },
+      {
+        "name": "Pickaxe (Fortune)",
+        "quantity": 14,
+        "price": 1,
+        "image": "dia_pick.png"
+      },
+      {
+        "name": "Pickaxe (Silk Touch)",
+        "quantity": 14,
+        "price": 1,
+        "image": "dia_pick.png"
+      },
+      { "name": "Sword", "quantity": 20, "price": 1, "image": "dia_sword.png" },
+      {
+        "name": "Repair Box (Shulker Full of XP Bottles)",
+        "quantity": 48,
+        "price": 1,
+        "image": "bottle_of_enchanting.png"
+      },
+      {
+        "name": "Glowstone",
+        "quantity": 64,
+        "price": 3,
+        "image": "glowstone.png"
+      },
+
+      { "name": "Chest", "quantity": 16, "price": 1, "image": "chest.png" },
+      {
+        "name": "Ender Pearl",
+        "quantity": 64,
+        "price": 1,
+        "image": "ender_pearl.png"
+      },
+      {
+        "name": "Resin Block",
+        "quantity": 8,
+        "price": 1,
+        "image": "resin_block.png"
+      },
+      {
+        "name": "Soul Speed (I-II-III)",
+        "quantity": 1,
+        "price": 1,
+        "image": "enchanted_book.png"
+      },
+      { "name": "Gravel", "quantity": 256, "price": 1, "image": "gravel.png" },
+      {
+        "name": "Spectral Arrow",
+        "quantity": 256,
+        "price": 1,
+        "image": "spectral_arrow.png"
+      },
+
+      {
+        "name": "Obsidian",
+        "quantity": 32,
+        "price": 1,
+        "image": "obsidian.png"
+      },
+      {
+        "name": "Ghast Tear",
+        "quantity": 16,
+        "price": 1,
+        "image": "ghast_tear.png"
+      },
+      {
+        "name": "Blaze Rod",
+        "quantity": 32,
+        "price": 1,
+        "image": "blaze_rod.png"
+      },
+      {
+        "name": "Soul Sand",
+        "quantity": 128,
+        "price": 1,
+        "image": "soul_sand.png"
+      },
+      {
+        "name": "Slime Ball",
+        "quantity": 64,
+        "price": 1,
+        "image": "slime_ball.png"
+      },
+
+      {
+        "name": "Wood Log (All Types)",
+        "quantity": 256,
+        "price": 1,
+        "image": "wood.png"
+      },
+
+      {
+        "name": "Verdant Froglight",
+        "quantity": 64,
+        "price": 1,
+        "image": "verdant_froglight.png"
+      },
+      {
+        "name": "Pearlescent Froglight",
+        "quantity": 64,
+        "price": 1,
+        "image": "pearlescent_froglight.png"
+      },
+      {
+        "name": "Ochre Froglight",
+        "quantity": 64,
+        "price": 1,
+        "image": "ochre_froglight.png"
+      },
+      { "name": "Book", "quantity": 16, "price": 1, "image": "book.png" },
+      {
+        "name": "Sugarcane",
+        "quantity": 128,
+        "price": 1,
+        "image": "sugarcane.png"
+      },
+      { "name": "Melon", "quantity": 64, "price": 1, "image": "melon.png" },
+      { "name": "Haybale", "quantity": 8, "price": 1, "image": "haybale.png" },
+      {
+        "name": "Melon (Shulker)",
+        "quantity": 1,
+        "price": 15,
+        "image": "melon.png"
+      },
+      {
+        "name": "Sugarcane (Shulker)",
+        "quantity": 1,
+        "price": 10,
+        "image": "sugarcane.png"
+      },
+
+      {
+        "name": "Dye (All Types)",
+        "quantity": 64,
+        "price": 1,
+        "image": "white_dye.png"
+      },
+      {
+        "name": "Dyed Wool",
+        "quantity": 64,
+        "price": 2,
+        "image": "white_wool.png"
+      }
     ]
   },
+
   {
     "id": 19,
     "name": "Leonca's on order shop !",
     "owner": "Leonca",
     "coords": [-160, 64],
     "sells": [
-      "Goat Horns",
-      "Terracotta Blocks!!",
-      "Redstone Block",
-      "Slime Block",
-      "Smooth Stone",
-      "Mud",
-      "Purpur Block",
-      "End Rod",
-      "Sea Pickles",
-      "Coral Items"
+      {
+        "name": "Redstone Block",
+        "quantity": 16,
+        "price": 1,
+        "image": "redstone_block.png"
+      },
+      {
+        "name": "Slime Block",
+        "quantity": 32,
+        "price": 1,
+        "image": "slime_block.png"
+      },
+      {
+        "name": "Smooth Stone",
+        "quantity": 128,
+        "price": 1,
+        "image": "smooth_stone.png"
+      },
+      {
+        "name": "Purpur Block",
+        "quantity": 128,
+        "price": 1,
+        "image": "purpur_block.png"
+      },
+      { "name": "End Rod", "quantity": 32, "price": 1, "image": "end_rod.png" },
+      {
+        "name": "Goat Horn - Feel, Seek, Sing, Ponder",
+        "quantity": 1,
+        "price": 2,
+        "image": "goat_horn.png"
+      },
+      {
+        "name": "Goat Horn - Yearn, Admire, Call, Dream",
+        "quantity": 1,
+        "price": 3,
+        "image": "goat_horn.png"
+      },
+      {
+        "name": "Terracotta (All Naturally Generated Colors)",
+        "quantity": 128,
+        "price": 1,
+        "image": "terracotta.png"
+      },
+      {
+        "name": "Coral (All Types)",
+        "quantity": 64,
+        "price": 2,
+        "image": "coral.png"
+      },
+      {
+        "name": "Coral Fan (All Types)",
+        "quantity": 64,
+        "price": 2,
+        "image": "coral_fan.png"
+      },
+      {
+        "name": "Coral Block (All Types)",
+        "quantity": 32,
+        "price": 1,
+        "image": "coral_block.png"
+      },
+      {
+        "name": "Sea Pickles",
+        "quantity": 64,
+        "price": 1,
+        "image": "sea_pickle.png"
+      },
+      {
+        "name": "Mud",
+        "quantity": 128,
+        "price": 1,
+        "image": "mud.png"
+      }
     ]
   },
+
   {
     "id": 20,
     "name": "The Terra Library",
     "owner": "Creeva",
     "coords": [-228, 32],
     "sells": [
-      "Public library with many books available to read!",
-      "Ghost3ry sells poetry in the attic!",
-      "Free library cards (compass that will always point to spawn)"
+      {
+        "name": "Public library with many books available to read!",
+        "price": 0,
+        "image": "book.png"
+      },
+      {
+        "name": "Ghost3ry sells poetry in the attic!",
+        "price": 0,
+        "image": "book.png"
+      },
+      {
+        "name": "Free library cards (compass that will always point to spawn)",
+        "price": 0,
+        "image": "enchanted_compass.png"
+      }
     ]
   },
   {
@@ -206,27 +1129,132 @@
     "owner": "",
     "coords": [-76, 64, 96],
     "sells": [
-      "256 Oak Logs - 1 diamond",
-      "256 Birch Logs - 1 diamond",
-      "256 Spruce Logs - 1 diamond",
-      "256 Cherry Logs - 1 diamond",
-      "256 Acacia Oak Logs - 1 diamond",
-      "256 Jungle Logs - 1 diamond",
-      "256 Pale Oak Logs - 1 diamond",
-      "256 Dark Oak Logs - 1 diamond",
-      "256 Mangrove Logs - 1 diamond",
-      "256 Crimson Stem - 1 diamond",
-      "256 Warped Stem - 1 diamond",
-      "128 Pale Moss Carpet - 1 diamond",
-      "128 Moss Carpet - 1 diamond",
-      "128 Pale Moss Block - 1 diamond",
-      "128 Moss Block - 1 diamond",
-      "64 Azalea Bushes - 1 diamond",
-      "64 Flowering Azalea Bushes - 1 diamond",
-      "64 Bone Blocks - 1 diamond",
-      "128 Warped Wart Block - 1 diamond",
-      "128 Nether Wart Block - 1 diamond",
-      "32 Shroomlight - 1 diamond"
+      {
+        "name": "Oak Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "oak_logs.png"
+      },
+      {
+        "name": "Birch Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "birch_logs.png"
+      },
+      {
+        "name": "Spruce Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "spruce_logs.png"
+      },
+      {
+        "name": "Cherry Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "cherry_logs.png"
+      },
+      {
+        "name": "Acacia Oak Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "acacia_oak_logs.png"
+      },
+      {
+        "name": "Jungle Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "jungle_logs.png"
+      },
+      {
+        "name": "Pale Oak Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "pale_oak_logs.png"
+      },
+      {
+        "name": "Dark Oak Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "dark_oak_logs.png"
+      },
+      {
+        "name": "Mangrove Logs",
+        "quantity": 256,
+        "price": 1,
+        "image": "mangrove_logs.png"
+      },
+      {
+        "name": "Crimson Stem",
+        "quantity": 256,
+        "price": 1,
+        "image": "crimson_stem.png"
+      },
+      {
+        "name": "Warped Stem",
+        "quantity": 256,
+        "price": 1,
+        "image": "warped_stem.png"
+      },
+      {
+        "name": "Pale Moss Carpet",
+        "quantity": 128,
+        "price": 1,
+        "image": "pale_moss_carpet.png"
+      },
+      {
+        "name": "Moss Carpet",
+        "quantity": 128,
+        "price": 1,
+        "image": "moss_carpet.png"
+      },
+      {
+        "name": "Pale Moss Block",
+        "quantity": 128,
+        "price": 1,
+        "image": "pale_moss_block.png"
+      },
+      {
+        "name": "Moss Block",
+        "quantity": 128,
+        "price": 1,
+        "image": "moss_block.png"
+      },
+      {
+        "name": "Azalea Bushes",
+        "quantity": 64,
+        "price": 1,
+        "image": "azalea_bushes.png"
+      },
+      {
+        "name": "Flowering Azalea Bushes",
+        "quantity": 64,
+        "price": 1,
+        "image": "flowering_azalea_bushes.png"
+      },
+      {
+        "name": "Bone Block",
+        "quantity": 64,
+        "price": 1,
+        "image": "bone_block.png"
+      },
+      {
+        "name": "Warped Wart Block",
+        "quantity": 128,
+        "price": 1,
+        "image": "warped_wart_block.png"
+      },
+      {
+        "name": "Nether Wart Block",
+        "quantity": 128,
+        "price": 1,
+        "image": "nether_wart_block.png"
+      },
+      {
+        "name": "Shroomlight",
+        "quantity": 32,
+        "price": 1,
+        "image": "shroomlight.png"
+      }
     ]
   }
 ]
