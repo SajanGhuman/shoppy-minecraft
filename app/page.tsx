@@ -147,10 +147,6 @@ export default function Home() {
                 <p className="text-xs text-gray-800 mb-2">
                   👤 Owner: {shop.owner}
                 </p>
-                <p className="text-xs text-gray-800">
-                  Lowest Price:{" "}
-                  {Math.min(...shop.sells.map((item) => item.price))} 💎
-                </p>
               </div>
             </div>
           </Link>
