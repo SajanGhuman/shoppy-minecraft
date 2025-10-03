@@ -1,5 +1,7 @@
+"use client";
 import shops from "@/public/shops.json";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface ShopItem {
   name: string;
@@ -16,6 +18,7 @@ interface ShopPageProps {
 
 export default function ShopPage({ params }: ShopPageProps) {
   const shop = shops.find((s) => s.id.toString() === params.id);
+  const router = useRouter();
 
   if (!shop) {
     return (
@@ -43,6 +46,16 @@ export default function ShopPage({ params }: ShopPageProps) {
           <span>{shop.owner}</span>
         </div>
         <p className="text-lg">📍 {shop.coords.join(", ")}</p>
+      </div>
+
+      {/* Back Button */}
+      <div className="w-full max-w-3xl flex justify-center">
+        <button
+          onClick={() => router.back()}
+          className="px-6 py-3 rounded-xl text-lg font-bold pixel-font bg-white/30 backdrop-blur-md border border-white/30 shadow-lg hover:scale-105 transition-transform"
+        >
+          ⬅ Back
+        </button>
       </div>
 
       {/* Sells Section */}
@@ -81,7 +94,6 @@ export default function ShopPage({ params }: ShopPageProps) {
           ))}
         </div>
       </section>
-
       {/* Buys Section */}
       {shop.buys && (
         <section className="w-full max-w-5xl rounded-2xl bg-white/30 backdrop-blur-md border border-white/30 shadow-lg p-6">
@@ -125,12 +137,12 @@ export default function ShopPage({ params }: ShopPageProps) {
 
       {/* Back Button */}
       <div className="w-full max-w-3xl flex justify-center">
-        <Link
-          href="/"
+        <button
+          onClick={() => router.back()}
           className="px-6 py-3 rounded-xl text-lg font-bold pixel-font bg-white/30 backdrop-blur-md border border-white/30 shadow-lg hover:scale-105 transition-transform"
         >
-          ⬅ Back to Directory
-        </Link>
+          ⬅ Back
+        </button>
       </div>
     </main>
   );

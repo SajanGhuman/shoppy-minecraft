@@ -23,7 +23,8 @@
         "price": 1,
         "image": "lapis_block.png"
       }
-    ]
+    ],
+    "type": ["Blocks", "Redstone Components", "Minerals & Ores"]
   },
   {
     "id": 2,
@@ -86,6 +87,13 @@
         "price": 1,
         "image": "shroomlight.png"
       }
+    ],
+    "type": [
+      "Food",
+      "Blocks",
+      "Nether Items",
+      "Animals & Mobs",
+      "Minerals & Ores"
     ]
   },
   {
@@ -107,12 +115,7 @@
         "price": 1,
         "image": "bone_block.png"
       },
-      {
-        "name": "Berries",
-        "quantity": 1,
-        "price": 1,
-        "image": "berries.png"
-      },
+      { "name": "Berries", "quantity": 1, "price": 1, "image": "berries.png" },
       {
         "name": "Verdant Froglight",
         "quantity": 64,
@@ -131,7 +134,8 @@
         "price": 1,
         "image": "ochre_froglight.png"
       }
-    ]
+    ],
+    "type": ["Blocks", "Food", "Decorative Items"]
   },
   {
     "id": 4,
@@ -193,7 +197,8 @@
         "price": 2,
         "image": "rooted_dirt.png"
       }
-    ]
+    ],
+    "type": ["Blocks", "Minerals & Ores", "Building Material"]
   },
   {
     "id": 5,
@@ -228,10 +233,11 @@
         "price": 5,
         "image": "coarse_dirt.png"
       }
-    ]
+    ],
+    "type": ["Blocks", "Building Material", "Farming Supplies", "Contract Work"]
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "The Scraporium",
     "owner": "Notony_",
     "coords": [-130, 65],
@@ -286,10 +292,17 @@
         "price": 2,
         "image": "packed_ice.png"
       }
+    ],
+    "type": [
+      "Blocks",
+      "Farming Supplies",
+      "Decorative Items",
+      "Food",
+      "Minerals & Ores"
     ]
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "The Thrift and Gift",
     "owner": "paigeroks",
     "coords": [-64, 30],
@@ -453,10 +466,24 @@
         "price": 9,
         "image": "pouch.png"
       }
+    ],
+    "type": [
+      "Blocks",
+      "Minerals & Ores",
+      "Food",
+      "Potion & Brewing",
+      "Enchanted Items",
+      "Armor",
+      "Tools",
+      "Animals & Mobs",
+      "Redstone Components",
+      "Decorative Items",
+      "Transportation",
+      "Misc"
     ]
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Racoonamatata!",
     "owner": "Evivant",
     "coords": [63, 17],
@@ -468,10 +495,11 @@
         "price": 5,
         "image": "ender_chest.png"
       }
-    ]
+    ],
+    "type": ["Blocks", "End Items", "Redstone Components"]
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "Seol Mate",
     "owner": "Nima_Master",
     "coords": [-69, 42],
@@ -530,12 +558,7 @@
         "quantity": 64,
         "image": "tinted_glass.png"
       },
-      {
-        "name": "Glass",
-        "price": 1,
-        "quantity": 128,
-        "image": "glass.png"
-      },
+      { "name": "Glass", "price": 1, "quantity": 128, "image": "glass.png" },
       {
         "name": "Variety of Special Herbs",
         "price": 1,
@@ -554,16 +577,21 @@
         "quantity": 64,
         "image": "cobbled_deepslate.png"
       },
-      {
-        "name": "Tuff Blocks",
-        "price": 1,
-        "quantity": 96,
-        "image": "tuff.png"
-      }
+      { "name": "Tuff Blocks", "price": 1, "quantity": 96, "image": "tuff.png" }
+    ],
+    "type": [
+      "Blocks",
+      "End Items",
+      "Music & Records",
+      "Potion & Brewing",
+      "Food",
+      "Decorative Items",
+      "Building Material",
+      "Misc"
     ]
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "Rylith's Smith and Drip",
     "owner": "Rylith_",
     "coords": [-141, -4],
@@ -598,49 +626,41 @@
         "price": 10,
         "image": "enchanted_book.png"
       },
-
       {
         "name": "Golden Apple",
         "price": 15,
         "quantity": 1,
         "image": "golden_apple.png"
       }
+    ],
+    "type": [
+      "Blocks",
+      "Armor",
+      "Enchanted Items",
+      "Food",
+      "Smithing & Crafting"
     ]
   },
   {
-    "id": 13,
+    "id": 11,
     "name": "Creeper's Cat Shop",
     "owner": "GBeanT_T",
     "coords": [-71, 91],
     "sells": [
-      {
-        "name": "Random Type",
-        "price": 5,
-        "quantity": 1,
-        "image": "cat.png"
-      },
+      { "name": "Random Type", "price": 5, "quantity": 1, "image": "cat.png" },
       {
         "name": "Specific Type",
         "price": 10,
         "quantity": 1,
         "image": "cat.png"
       },
-      {
-        "name": "Rare Type",
-        "price": 30,
-        "quantity": 1,
-        "image": "cat.png"
-      },
-      {
-        "name": "Raw Cod",
-        "price": 1,
-        "quantity": 64,
-        "image": "cod.png"
-      }
-    ]
+      { "name": "Rare Type", "price": 30, "quantity": 1, "image": "cat.png" },
+      { "name": "Raw Cod", "price": 1, "quantity": 64, "image": "cod.png" }
+    ],
+    "type": ["Animals & Mobs", "Food"]
   },
   {
-    "id": 14,
+    "id": 12,
     "name": "Trog's End Raider",
     "owner": "Troglodyte06",
     "coords": [-134, 55],
@@ -657,10 +677,11 @@
         "quantity": 1,
         "image": "lava_bucket.png"
       }
-    ]
+    ],
+    "type": ["Potion & Brewing", "Blocks", "Animals & Mobs"]
   },
   {
-    "id": 15,
+    "id": 13,
     "name": "C4' Stable, Silk, and Stake",
     "owner": "C4Beast",
     "coords": [-114, 17],
@@ -677,10 +698,11 @@
         "quantity": 1,
         "image": "white_horse.png"
       }
-    ]
+    ],
+    "type": ["Animals & Mobs", "Blocks", "Decorative Items"]
   },
   {
-    "id": 16,
+    "id": 14,
     "name": "The Blooming Shrine",
     "owner": "Yellamoiahs",
     "coords": [-135, -26],
@@ -710,7 +732,6 @@
         "quantity": 21,
         "image": "flower_pot.png"
       },
-
       {
         "name": "Dried Kelp",
         "price": 1,
@@ -786,10 +807,18 @@
         "price": 1,
         "image": "red_banner.png"
       }
+    ],
+    "type": [
+      "Blocks",
+      "Plants",
+      "Redstone Components",
+      "Decorative Items",
+      "Explosives",
+      "Food"
     ]
   },
   {
-    "id": 18,
+    "id": 15,
     "name": "RigMart",
     "owner": "Various Rig Members",
     "coords": [-62, 135],
@@ -820,7 +849,6 @@
         "price": 1,
         "image": "gold_block.png"
       },
-
       { "name": "TNT", "quantity": 16, "price": 1, "image": "tnt.png" },
       {
         "name": "Firework Rocket (Duration 1)",
@@ -852,7 +880,6 @@
         "price": 1,
         "image": "purple_shulker.png"
       },
-
       {
         "name": "Diamond Helmet",
         "quantity": 20,
@@ -897,7 +924,6 @@
         "price": 3,
         "image": "glowstone.png"
       },
-
       { "name": "Chest", "quantity": 16, "price": 1, "image": "chest.png" },
       {
         "name": "Ender Pearl",
@@ -924,7 +950,6 @@
         "price": 1,
         "image": "spectral_arrow.png"
       },
-
       {
         "name": "Obsidian",
         "quantity": 32,
@@ -955,14 +980,12 @@
         "price": 1,
         "image": "slime_ball.png"
       },
-
       {
         "name": "Wood Log (All Types)",
         "quantity": 256,
         "price": 1,
         "image": "wood.png"
       },
-
       {
         "name": "Verdant Froglight",
         "quantity": 64,
@@ -1002,7 +1025,6 @@
         "price": 10,
         "image": "sugarcane.png"
       },
-
       {
         "name": "Dye (All Types)",
         "quantity": 64,
@@ -1015,11 +1037,21 @@
         "price": 2,
         "image": "white_wool.png"
       }
+    ],
+    "type": [
+      "Blocks",
+      "Tools",
+      "Armor",
+      "Weapons",
+      "Food",
+      "Enchanted Items",
+      "Redstone Components",
+      "Decorative Items",
+      "Explosives"
     ]
   },
-
   {
-    "id": 19,
+    "id": 16,
     "name": "Leonca's on order shop !",
     "owner": "Leonca",
     "coords": [-160, 64],
@@ -1091,17 +1123,19 @@
         "price": 1,
         "image": "sea_pickle.png"
       },
-      {
-        "name": "Mud",
-        "quantity": 128,
-        "price": 1,
-        "image": "mud.png"
-      }
+      { "name": "Mud", "quantity": 128, "price": 1, "image": "mud.png" }
+    ],
+    "type": [
+      "Blocks",
+      "Decorative Items",
+      "Plants",
+      "Redstone Components",
+      "Music & Instruments",
+      "Contract Work"
     ]
   },
-
   {
-    "id": 20,
+    "id": 17,
     "name": "The Terra Library",
     "owner": "Creeva",
     "coords": [-228, 32],
@@ -1121,20 +1155,16 @@
         "price": 0,
         "image": "enchanted_compass.png"
       }
-    ]
+    ],
+    "type": ["Books & Reading", "Maps & Navigation"]
   },
   {
-    "id": 21,
+    "id": 18,
     "name": "Wood Lodge",
     "owner": "",
     "coords": [-76, 64, 96],
     "sells": [
-      {
-        "name": "Oak Log",
-        "quantity": 256,
-        "price": 1,
-        "image": "wood.png"
-      },
+      { "name": "Oak Log", "quantity": 256, "price": 1, "image": "wood.png" },
       {
         "name": "Birch Log",
         "quantity": 256,
@@ -1255,6 +1285,7 @@
         "price": 1,
         "image": "shroomlight.png"
       }
-    ]
+    ],
+    "type": ["Blocks", "Plants", "Decorative Items"]
   }
 ]
