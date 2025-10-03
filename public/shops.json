@@ -1130,70 +1130,70 @@
     "coords": [-76, 64, 96],
     "sells": [
       {
-        "name": "Oak Logs",
+        "name": "Oak Log",
         "quantity": 256,
         "price": 1,
-        "image": "oak_logs.png"
+        "image": "wood.png"
       },
       {
-        "name": "Birch Logs",
+        "name": "Birch Log",
         "quantity": 256,
         "price": 1,
-        "image": "birch_logs.png"
+        "image": "birch_log.png"
       },
       {
-        "name": "Spruce Logs",
+        "name": "Spruce Log",
         "quantity": 256,
         "price": 1,
-        "image": "spruce_logs.png"
+        "image": "spruce_log.png"
       },
       {
-        "name": "Cherry Logs",
+        "name": "Cherry Log",
         "quantity": 256,
         "price": 1,
-        "image": "cherry_logs.png"
+        "image": "cherry_log.png"
       },
       {
-        "name": "Acacia Oak Logs",
+        "name": "Acacia Oak Log",
         "quantity": 256,
         "price": 1,
-        "image": "acacia_oak_logs.png"
+        "image": "acacia_log.png"
       },
       {
-        "name": "Jungle Logs",
+        "name": "Jungle Log",
         "quantity": 256,
         "price": 1,
-        "image": "jungle_logs.png"
+        "image": "jungle_log.png"
       },
       {
-        "name": "Pale Oak Logs",
+        "name": "Pale Oak Log",
         "quantity": 256,
         "price": 1,
-        "image": "pale_oak_logs.png"
+        "image": "pale_log.png"
       },
       {
-        "name": "Dark Oak Logs",
+        "name": "Dark Oak Log",
         "quantity": 256,
         "price": 1,
-        "image": "dark_oak_logs.png"
+        "image": "dark_log.png"
       },
       {
         "name": "Mangrove Logs",
         "quantity": 256,
         "price": 1,
-        "image": "mangrove_logs.png"
+        "image": "mangrove_log.png"
       },
       {
         "name": "Crimson Stem",
         "quantity": 256,
         "price": 1,
-        "image": "crimson_stem.png"
+        "image": "crimson_log.png"
       },
       {
         "name": "Warped Stem",
         "quantity": 256,
         "price": 1,
-        "image": "warped_stem.png"
+        "image": "warped_log.png"
       },
       {
         "name": "Pale Moss Carpet",
@@ -1220,16 +1220,16 @@
         "image": "moss_block.png"
       },
       {
-        "name": "Azalea Bushes",
+        "name": "Azalea Bushe",
         "quantity": 64,
         "price": 1,
-        "image": "azalea_bushes.png"
+        "image": "azalea_bush.png"
       },
       {
-        "name": "Flowering Azalea Bushes",
+        "name": "Flowering Azalea Bushe",
         "quantity": 64,
         "price": 1,
-        "image": "flowering_azalea_bushes.png"
+        "image": "flowering_azalea_bush.png"
       },
       {
         "name": "Bone Block",
