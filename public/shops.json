@@ -33,7 +33,7 @@
     "coords": [-92, 16],
     "sells": [
       {
-        "name": "Shulker of Totems (Shulker)",
+        "name": "Totems (Shulker)",
         "quantity": 1,
         "price": 10,
         "image": "totem.png"
@@ -46,7 +46,7 @@
         "image": "golden_carrot.png"
       },
       {
-        "name": "Golden Carrot (Shulker)",
+        "name": "Golden Carrots (Shulker)",
         "quantity": 1,
         "price": 24,
         "image": "golden_carrot.png"
@@ -144,30 +144,6 @@
     "coords": [-52, 29],
     "sells": [
       {
-        "name": "Shulker of Cobblestone",
-        "quantity": 1,
-        "price": 10,
-        "image": "cobblestone.png"
-      },
-      {
-        "name": "Shulker of Cobbled Deepslate",
-        "quantity": 1,
-        "price": 10,
-        "image": "cobbled_deepslate.png"
-      },
-      {
-        "name": "Shulker Stone",
-        "quantity": 1,
-        "price": 10,
-        "image": "stone.png"
-      },
-      {
-        "name": "Shulker Stone Bricks",
-        "quantity": 1,
-        "price": 10,
-        "image": "stone_brick.png"
-      },
-      {
         "name": "Blackstone",
         "quantity": 64,
         "price": 3,
@@ -196,8 +172,45 @@
         "quantity": 64,
         "price": 2,
         "image": "rooted_dirt.png"
+      },
+      {
+        "name": "Elytra",
+        "quantity": 1,
+        "price": 45,
+        "image": "elytra.png"
+      },
+      {
+        "name": "Cocoa Beans",
+        "quantity": 64,
+        "price": 3,
+        "image": "cocoa_beans.png"
+      },
+      {
+        "name": "Cobblestone (Shulker)",
+        "quantity": 1,
+        "price": 10,
+        "image": "cobblestone.png"
+      },
+      {
+        "name": "Cobbled Deepslate (Shulker)",
+        "quantity": 1,
+        "price": 10,
+        "image": "cobbled_deepslate.png"
+      },
+      {
+        "name": "Stone (Shulker)",
+        "quantity": 1,
+        "price": 10,
+        "image": "stone.png"
+      },
+      {
+        "name": "Stone Bricks (Shulker)",
+        "quantity": 1,
+        "price": 10,
+        "image": "stone_brick.png"
       }
     ],
+
     "type": ["Blocks", "Minerals & Ores", "Building Material"]
   },
   {
@@ -228,7 +241,7 @@
         "image": "grass_block.png"
       },
       {
-        "name": "Shulker of Dirt",
+        "name": "Dirt (Shulker)",
         "quantity": 1,
         "price": 5,
         "image": "coarse_dirt.png"
@@ -243,14 +256,14 @@
     "coords": [-130, 65],
     "sells": [
       {
-        "name": "Shulker of Dirt",
+        "name": "Dirt (Shulker)",
         "quantity": 1,
         "price": 3,
         "image": "dirt.png"
       },
       { "name": "Iron", "quantity": 64, "price": 8, "image": "iron_block.png" },
       {
-        "name": "Shulker of Stone",
+        "name": "Stone (Shulker)",
         "quantity": 1,
         "price": 2,
         "image": "stone.png"
@@ -370,7 +383,7 @@
         "image": "smooth_basalt.png"
       },
       {
-        "name": "Shulker of Mystery Potions",
+        "name": "Mystery Potions (Shulker)",
         "quantity": 1,
         "price": 6,
         "image": "mystery_potion.png"
@@ -547,7 +560,7 @@
         "image": "quartz_block.png"
       },
       {
-        "name": "Terracotta",
+        "name": "Terracotta (All Types)",
         "price": 1,
         "quantity": 128,
         "image": "terracotta.png"
@@ -666,7 +679,7 @@
     "coords": [-134, 55],
     "sells": [
       {
-        "name": "Shulkers Shell",
+        "name": "Shulker Shell",
         "price": 2,
         "quantity": 20,
         "image": "shulker_shell.png"
@@ -753,7 +766,7 @@
         "image": "rocket.png"
       },
       {
-        "name": "Rocket (Red Shulker)",
+        "name": "Rockets (Shulker)",
         "quantity": 1,
         "price": 6,
         "image": "rocket.png"
@@ -1014,7 +1027,7 @@
       { "name": "Melon", "quantity": 64, "price": 1, "image": "melon.png" },
       { "name": "Haybale", "quantity": 8, "price": 1, "image": "haybale.png" },
       {
-        "name": "Melon (Shulker)",
+        "name": "Melons (Shulker)",
         "quantity": 1,
         "price": 15,
         "image": "melon.png"
@@ -1094,7 +1107,7 @@
         "image": "goat_horn.png"
       },
       {
-        "name": "Terracotta (All Naturally Generated Colors)",
+        "name": "Terracotta (All Types)",
         "quantity": 128,
         "price": 1,
         "image": "terracotta.png"
